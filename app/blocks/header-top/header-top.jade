@@ -1,0 +1,27 @@
+mixin header-top()
+
+    +b('section').header-top
+        .container
+            +e.wrap
+                +e.menu
+                    +e.icon
+                        img(src='/images/geo.svg')
+                    +e('p').text Ваш город: <span>Москва</span>
+                    +e.icon-arrow
+                        img(src='/images/next-arrow.svg')
+                    +e('p').text Доставка
+                    +e('p').text Оплата
+                    +e('p').text Возврат
+                +e.menu
+                    +e('p').text О нас
+                    +e.icon-arrow
+                        img(src='/images/next-arrow.svg')
+                    +e('p').text Контакты
+                    +e.contact
+                        +e.icon-contact
+                            img(src='/images/e-mail.svg')
+                        +e('p').text-contact sale@oao-sozvezdie.ru
+                    +e.contact
+                        +e.icon-contact
+                            img(src='/images/phone.svg')
+                        +e('p').text-contact 8(495)617-18-77

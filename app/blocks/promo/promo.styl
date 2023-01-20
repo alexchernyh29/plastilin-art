@@ -1,0 +1,137 @@
+.promo
+    padding-top w(40)
+
+    &__wrap
+        display flex
+        flex-direction row
+        justify-content space-between
+
+    &__banner
+        width w(1130)
+        height w(550)
+        background url('../../images/banner.jpg') no-repeat center
+        z-index 1
+        padding w(140) 0 0 w(100)
+
+    &__title
+        font-family $ff-Exo2
+        font-size w(50)
+        line-height w(59)
+        display flex
+        align-items flex-end
+        color $c-orange
+
+     &__subtitle
+        padding-top w(25)
+        padding-bottom w(40)
+        font-family $ff-Exo2
+        font-size w(25)
+        line-height w(30)
+        display flex
+        align-items flex-end
+        color $c-blue_1
+
+    &__button
+        width w(220)
+        height w(50)
+        margin-bottom w(95)
+        background-color $c-blue_1
+        color $c-white
+        font-family 'Roboto'
+        font-style normal
+        font-weight 500
+        font-size 16px
+        line-height 32px
+        display flex
+        justify-content center
+        align-items center
+        text-align center
+        border none
+
+    &__banner__mini
+        padding w(10)
+        border w(1) solid $c-grey
+
+    &__info
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-items flex-start
+
+    &__text
+        padding-top w(10)
+        font-family $ff-Exo2
+        font-size w(35)
+        line-height w(41)
+        display flex
+        align-items flex-end
+        color $c-blue
+    
+    &__product
+        width w(309)
+        height w(218)
+        img
+            width 100%
+
+    &__wrap__price
+        padding-top w(40)
+        display flex
+        flex-direction row
+        justify-content space-between 
+
+    &__text__info
+        padding-top w(10)
+        font-family $ff-Roboto
+        font-style normal
+        font-weight 500
+        font-size w(16)
+        line-height w(22)
+        color $c-blue
+
+    &__text__price
+        font-family $ff-Roboto
+        font-style normal
+        font-weight 700
+        font-size w(22)
+        line-height w(22)
+        display flex
+        align-items center
+        color $c-orange
+
+    &__swap
+        padding-top w(50)
+        display flex
+        flex-direction row
+        align-items center
+        padding-left w(20)
+
+    &__active
+        width w(25)
+        color $c-orange
+        border none
+        border-top w(5) solid $c-orange
+
+    &__next
+        margin-left w(10)
+        width w(25)
+        height w(3)
+        border none
+        border-top w(3) solid $c-blue
+
+    &__swap-prev
+        z-index 2
+        position absolute
+        top w(450)
+        left w(190)
+
+    &__swap-next
+        z-index 2
+        position absolute
+        top w(450)
+        right w(580)
+
+    &__swap-next__mini
+        z-index 2
+        position absolute
+        top w(450)
+        right w(190)

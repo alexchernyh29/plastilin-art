@@ -1,0 +1,49 @@
+mixin header-bottom()
+
+    +b('section').header-bottom
+            .container
+                +e.wrap
+                    +e.logo
+                        img(src='/images/logo.svg')
+                    +e.catalog
+                    +e('button').button-catalog
+                        +e('i').icon-catalog
+                            img(src='/images/catalog.svg')
+                        +e('ul').topmenu
+                            +e('li').menu Каталог
+                            +e('ul').submenu
+                                +e('li').submenu__link Электроника
+                                    +e('ul').submenu__right
+                                        +e('li').submenu__item Электронные компоненты
+                                        +e('li').submenu__item Электромеханические компоненты
+                                        +e('li').submenu__item Акустические компоненты
+                                        +e('li').submenu__item Оптоэлектроника
+                                        +e('li').submenu__item Корпусные и установочные изделия
+                                        +e('li').submenu__item Источники питания
+                                +e('li').submenu__link Элекстроснабжение и СКС
+                                +e('li').submenu__link Оборудование Инструмент
+                                +e('li').submenu__link Средства разработки
+                                +e('li').submenu__link Телекомуникация и связь
+                                +e('li').submenu__link Дом и сад
+                    +e.search
+                        +e('select').list Везде
+                            +e('option').item Везде
+                            +e('option').item Везде
+                            +e('option').item Везде
+                        +e('p').text Поиск по сайту
+                        +e.icon-search
+                            img(src='/images/search.svg')
+                    +e('button').button
+                        +e('i').icon
+                            img(src='/images/compare.svg')
+                    +e('button').button
+                        +e('i').icon
+                            img(src='/images/favorite.svg')
+                    +e('button').button
+                        +e('i').icon
+                            img(src='/images/cart.svg')
+                    +e('button').button
+                        +e('i').icon
+                            img(src='/images/personal-area.svg')
+                    +e('button').button-callback Обратный звонок
+            +e('hr').border

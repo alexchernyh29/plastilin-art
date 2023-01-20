@@ -1,0 +1,12 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header-top/header-top
+include /blocks/header-bottom/header-bottom
+include /blocks/promo/promo
+
+block head
+	- var pageTitle = 'Project Template';
+
+block content
+	+header-top()
+	+header-bottom()
+	+promo()

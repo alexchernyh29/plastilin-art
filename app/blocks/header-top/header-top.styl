@@ -1,0 +1,68 @@
+.header-top
+    background-color $c-blue
+    position absolute
+    z-index 1
+    top 0
+    left 0
+    min-height w(50)
+    width 100%
+
+    &__wrap
+        padding w(10) 0
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-content center
+
+    &__menu
+        display flex
+        flex-direction row
+        justify-content flex-start
+        align-content center
+
+    &__contact
+        padding-left w(20)
+        display flex
+        flex-direction row
+        justify-content flex-start
+        align-content center
+
+    &__icon
+        padding-top w(8)
+        width w(11)
+        height w(10)
+        img
+            width 100%
+
+    &__icon-arrow
+        padding-top w(15)
+        padding-left w(4)
+        transform rotate(-90deg)
+        width w(13)
+        img
+            width 100%
+
+    &__icon-contact
+        padding-top w(10)
+        width w(15)
+        img
+            width 100%
+
+    &__text
+        padding-left w(25)
+        font-family $ff-Roboto
+        font-weight 400
+        font-size 14px
+        line-height 32px
+        color $c-white
+
+        span
+            color $c-orange_1
+
+    &__text-contact
+        padding-left w(5)
+        font-family $ff-Roboto
+        font-weight 400
+        font-size 16px
+        line-height 32px
+        color $c-orange_1

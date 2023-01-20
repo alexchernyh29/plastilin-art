@@ -1,0 +1,37 @@
+mixin promo()
+
+    +b('section').promo
+            .container
+                +e.wrap
+                    +e.banner
+                        +e('h4').title BOSH и DREMEL
+                        +e('p').subtitle УЖЕ В ПРОДАЖЕ!
+                        +e('button').button Подробнее
+                        +e.swap 
+                            +e.active 
+                            +e.next
+                            +e.next
+                            +e.next
+                    +e.swap-prev 
+                        img(src='/images/prev.png')
+                    +e.swap-next 
+                        img(src='/images/next.png')
+                    +e.banner__mini
+                        +e.info
+                            +e('p').text Товар дня
+                            +e.sale
+                                img(src='/images/sale.png')
+                        +e.product
+                            img(src='/images/product.png')
+                        +e('p').text__info TGLI 12V-80, Аккумуляторный фонарь
+                        +e.wrap__price 
+                            +e('p').text__price 2484,00Р
+                            +e.cart
+                                img(src='/images/cart.png')
+                        +e.swap 
+                            +e('hr').active 
+                            +e.next
+                            +e.next
+                            +e.next
+                        +e.swap-next__mini
+                            img(src='/images/next.png')
